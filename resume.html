@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>jack</title>
+        <title id='name'>jack</title>
         <link rel='shortcut icon' href='favicons/favicon.ico'>
         <link rel='stylesheet' href='style.css'>
     </head>
-    <body>
+    <body onload='getName()'>
+        <script src='app.js'></script>
         <div class='header-links'>
             <a href='index.html'>home</a>
             <a href='about.html'>about me</a>
             <a href='github.html'>github</a>
-            <a class='header-selected' href='resume.html'>resume</a>
+            <a id='header-selected' href='resume.html'>resume</a>
+            <a href='contact.html'>contact</a>
+        </div>
+        <div>
+            <p>Check it out here</p>
         </div>
     </body>
 </html>

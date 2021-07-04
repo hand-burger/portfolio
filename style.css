@@ -24,7 +24,7 @@ body{
     padding-bottom: 5px;
     padding-top: 3px;
 }
-.header-selected{
+#header-selected{
     border-bottom: 5px solid #4c4a63;
 }
 .intro{
@@ -39,4 +39,14 @@ body{
 }
 #before{
     display: inline;
+}
+.paragraph{
+    padding-left: 50px;
+    padding-right: 50px;
+    line-height: 30px;
+}
+.header{
+    color: #D90429;
+    padding-left: 30px;
+    padding-top: 10px;
 }
