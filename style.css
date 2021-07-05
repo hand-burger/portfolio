@@ -68,7 +68,7 @@ body{
     from{font-size: 60px;}
     to{font-size: 75px;}
 }
-.another-animation{
+/* .another-animation{
     font-size: 40px;
     text-align: right;
     width: 0px;
@@ -76,10 +76,22 @@ body{
     animation-name: slide;
     animation-duration: 1500ms;
     animation-fill-mode: forwards;
-}
-@keyframes slide{
+} */
+/* @keyframes slide{
     from{width: 0px;}
     to{width: 65vw;}
+} */
+.another-animation{
+    font-size: 40px;
+    text-align: center;
+    transform: translate(0px, -150px);
+    animation-name: slide-down;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes slide-down{
+    from{transform:translate(0px, -150px);}
+    to{transform:translate(0px, 0px);}
 }
 .icons a{
     color: black;
