@@ -92,3 +92,15 @@ body{
     justify-content: center;
     align-items: center;
 }
+.here a{
+    display: inline;
+    text-decoration: none;
+    color: #D90429;
+}
+.here p{
+    display: inline;
+}
+.experience-list{
+    padding-left: 50px;
+    line-height: 30px;
+}
