@@ -7,5 +7,4 @@ function getName(){
     }
     var combined = 'jack/' + page;
     document.getElementById('name').innerHTML = combined;
-    console.log(page);
 }
