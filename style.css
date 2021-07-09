@@ -7,6 +7,12 @@ body{
     padding: 0;
     font-family: 'IBM Plex Mono', monospace;
 }
+a{
+    text-decoration: none;
+}
+hr{
+    border: black;
+}
 .header-links a{
     text-decoration: none;
     color: #EDF2F4;
@@ -59,6 +65,7 @@ body{
     color: #D90429;
     padding-left: 30px;
     padding-top: 10px;
+    font-size: 18px;
 }
 #pop{
     animation-name: pop;
@@ -92,6 +99,12 @@ body{
 @keyframes slide-down{
     from{transform:translate(0px, -150px);}
     to{transform:translate(0px, 0px);}
+    0% { opacity: 0; }
+    20% { opacity: 0; }
+    40% { opacity: 0.1; }
+    60% { opacity: 0.5; }
+    80% { opacity: 0.9; }
+    100% { opacity: 1; }
 }
 .icons a{
     color: black;
@@ -113,6 +126,53 @@ body{
     display: inline;
 }
 .experience-list{
-    padding-left: 50px;
+    padding-left: 75px;
     line-height: 30px;
+}
+.link a{
+    text-decoration: none;
+    color: #2B2D42;
+}
+.link{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.fa-arrow-up{
+    color: #2B2D42;
+}
+.imag img{
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 160px;
+    width: 160px;    
+    border-radius: 25px;
+}
+.project-box a{
+    color: #EDF2F4;
+}
+
+.project-box{
+    width: 95%;
+    border: 3px solid black;
+    padding-top: 10px;
+    display: flex;
+}
+.projects{
+    padding-left: 4%;
+}
+.words i{
+    padding-bottom: 5px;
+}
+.heading{
+    text-align: center;
+    font-size: 22px;
+}
+.last-updated{
+    float: right;
+    padding-right: 10px;
+    padding-top: 12%;
+    font-size: 12px;
+}
+#title{
+    font-size: 18px;
 }
