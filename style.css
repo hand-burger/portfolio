@@ -39,7 +39,7 @@ hr{
 }
 .hey{
     text-align: center;
-    padding-top: 15%;
+    padding-top: 12%;
     font-size: 75px;
 }
 #name{
@@ -147,6 +147,15 @@ hr{
     width: 160px;    
     border-radius: 25px;
 }
+.imag img:hover{
+    animation-name: imgScale;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+@keyframes imgScale {
+    from{transform: scale(1);}
+    to{transform: scale(1.05);}
+}
 .project-box a{
     color: #EDF2F4;
 }
@@ -164,6 +173,7 @@ hr{
     padding-bottom: 5px;
 }
 .heading{
+    padding: 5px;
     text-align: center;
     font-size: 22px;
 }
@@ -175,4 +185,15 @@ hr{
 }
 #title{
     font-size: 18px;
+    color: #D90429;
+}
+.icons i:hover{
+    animation: scale;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    /* transform: scale(1.2); */
+}
+@keyframes scale{
+    from{transform: scale(1);}
+    to{transform: scale(1.2);}
 }
