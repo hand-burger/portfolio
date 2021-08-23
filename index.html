@@ -1,28 +1,181 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title id='name'>jack</title>
-        <link rel='shortcut icon' href='favicons/favicon.png'>
-        <link rel='stylesheet' href='style.css'>
-    </head>
-    <body onload='getName()'>
-        <script src='app.js'></script>
-        <div class='header-links'>
-            <a id='header-selected' href='index.html'>home</a>
-            <a href='about.html'>about me</a>
-            <a href='github.html'>projects</a>
-            <!-- <a href='resume.html'>resume</a> -->
-            <a href='contact.html'>contact</a>
+<html lang="en">
+  <head>
+    <!-- Boilerplate code -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title id='name'>jack</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <!-- Font garbage -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="title.js"></script>
+    <script src="main.js" defer></script>
+
+    <!-- Font Awesome -->
+    <script src='https://use.fontawesome.com/b4ac0c0a38.js'></script>
+
+  </head>
+  <body>
+    <section class="gradientCurve">
+      <!-- Nav header links -->
+      <header>
+        <div class="menu-btn">
+          <div class="menu-btn__lines"></div>
         </div>
-        <div class='hey'>
-            <p id='pop'>Hey there,</p>
+      <div class="nav_links">
+        <ul>
+          <li>
+            <a href='#about' class='menu-item' onclick="getName('about')">about_me</a>
+          </li>
+          <li>
+            <a href='#projects' class='menu-item' onclick="getName('projects')">projects</a>
+          </li>
+          <li>
+            <a href='#contact' class='menu-item' onclick="getName('contact')">contact</a>
+          </li>
+        </ul>
+      </header>
+      <!-- Intro text -->
+      <h1>Hey there, my names jack_</h1>
+      <p>I'm a Canadian software developer with a passion for competitive programming, full stack web design & creating functional and effective programs</p>
+      <!-- Curve from css ellipses -->
+      <div class="curve"></div>
+    </section>
+
+    <!-- About section -->
+    <section id='about'>
+      <h1>Get to know me</h1>
+      <h2 id='hi'>Hi, I'm Jack McAsh,</h2>
+      <p>I'm currently a Senior high school student at St. Mary's High School in Owen Sound, Ontario. In my spare time I enjoy
+        solving online computer science problems, studying algorithms & data structures and improving my programming skills.
+      </p>
+      <p>Outside of school and programming, I enjoy studying and researching stocks and general finance, listening to music, 
+        learning about cars, and playing hockey and other sports.
+      </p>
+      <h1>My skills</h1>
+
+      <!-- Skills circle section with left and right sides -->
+      <div class="circle">
+        <div class="left-section">
+          <h2>Here's a list of my relevant, computer related skills, in no particular order</h2>
         </div>
-        <div class='intro'>
-            <p id='before'>im</p>
-            <a id='name' href="about.html">jack.</a>
+        <div class="right-section">
+          <ul>
+            <li>
+              <h2>Over a decade of familiarity and experience in Windows and MacOS</h2>
+            </li>
+            <li>
+              <h2>Intermediate level of knowledge in major OOP languages such as C++, Java and Python</h2>
+            </li>
+            <li>
+              <h2>An extensive amount of knowledge in HTML, CSS, and JavaScript</h2>
+            </li>
+            <li>
+              <h2>Extreme familiarity with git and github</h2>
+            </li>
+            <li>
+              <h2>Experience in creating and completing large scale projects concerning both hardware and software</h2>
+            </li>
+            <li>
+              <h2>Lead programmer in a successful High-School robotics club over two years with the use of the OpenCV library</h2>
+            </li>
+            <li>
+              <h2>Experience using the Unity game engine and C# to create games and applications</h2>
+            </li>
+            <li>
+              <h2>Competitive programming skills mostly because of the CCC from the University of Waterloo</h2>
+            </li>
+            <li>
+              <h2>Comfortable experience with the MacOS terminal and command line interfaces</h2>
+            </li>
+            <li>
+              <h2>Years of experience in several different IDE's, such as Visual Studio, VScode, notepad++, Adobe Dreamweaver and Adobe Brackets</h2>
+            </li>
+          </ul>
         </div>
-        <div class='last-updated'>
-            <p>Last updated: August 2021</p>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="orange" id='projects'>
+      <h1>Check out some of my favorite projects</h1>
+      <div class="projects_display">
+        <div class="project_container">
+          <h3>Hamiltonian Snake</h3>
+          <img src="img/snake.png" alt="Hamiltonian Snake Image">
+          <p>A game of snake which plays itself by generating a <a href="https://en.wikipedia.org/wiki/Hamiltonian_path" id="wiki" target="_blank">hamiltonian</a> circuit to follow, which ensures it will always win.</p>
+          <a href="https://hand-burger.github.io/hamiltonian-snake/" target="_blank" id="button">Check it out in action</a>
         </div>
-    </body>
+        <div class="project_container">
+          <h3>Wired to Bluetooth Headphones</h3>
+          <img src="img/headphones.png" alt="Wireless Headphones">
+          <p>A pair of previously wired headphones which I converted to bluetooth with the use of a bluetooth receiver.</p>
+          <a href="/img/headphoneExplain.png" target="_blank" id="button">Check em' out</a>
+        </div>
+        <div class="project_container">
+          <h3>Bubble Fett Robot</h3>
+          <img src="img/robot.png" alt="Image of robot">
+          <p>A robot which my friends and I built for the 2020 First Tech Competition where I assumed the role of lead programmer.</p>
+          <a href="https://drive.google.com/drive/folders/1-FEiebjNSUJ5UG-XaMlvWAC7iK4bDx9O?usp=sharing" target="_blank" id="button">Check out the folder</a>
+        </div>
+        <div class="project_container">
+          <h3>CCC Solutions Archive</h3>
+          <img src="img/CCC.png" alt="Canadian Computing Competition logo">
+          <p>I've decided to start solving past CCC problems for experience and practice with competitive programming. So now, I've started to attempt to make a complete archive of the solutions.</p>
+          <a href="https://github.com/hand-burger/CCC-Solutions" target="_blank" id="button">Check out the solutions repo</a>
+        </div>
+      </div>
+
+      <!-- Svg wave graphic from https://www.shapedivider.app/ -->
+      <div class="wave">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Wave 1 -->
+    <div class="spacer layer1" id="spacerId1"></div>
+
+    <!-- Contact section -->
+    <section id='contact'>
+      <h1>Let's get in touch</h1>
+      <div class="contact">
+        <a href="mailto:jtmcash5@gmail.com"><i class='fa fa-envelope' aria-hidden='true'></i>[email/jtmcash5@gmail.com]</a><br>
+        <a href="http://instagram.com/jackmcash" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>[instagram/jackmcash]</a><br>
+        <a href="http://github.com/hand-burger" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>[github/hand-burger]</a>
+      </div>
+    </section>
+
+    <!-- Wave 2 -->
+    <div class="spacer layer2 flip" id="spacerId2"></div>
+
+    <script>
+      // Couldn't find a better way to do this other than using 3 id's since getElementsByClassName wasn't working :(
+      // This checks if safari is being used in order to manually change the bottom padding of the two waves
+      // Since the aspect-ratio attribute doesn't exist in safari for some reason?
+      if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
+            document.getElementById("spacerId1").style.paddingBottom =  "25.25%";
+            document.getElementById("spacerId2").style.paddingBottom =  "31.25%";
+          }
+    </script>
+
+    <!-- Cheeky little footer -->
+    <footer>
+      <p>© 2021 jack mcash. All rights reserved.<br><b>Made from scratch by <b id='names'>jack</b> 🍑</b></p>
+    </footer>
+  </body>
 </html>
