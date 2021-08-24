@@ -30,6 +30,10 @@ body {
   background: #202731;
   overflow-x: hidden;
 }
+.siteWrapper {
+  overflow-x: hidden;
+  position: relative;
+}
 section {
   position: relative;
   display: -webkit-box;
