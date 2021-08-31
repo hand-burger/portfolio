@@ -1,13 +1,27 @@
-// In the html on nav link button click, send the name of the button and set that to the new title
-// It does the trick, but it would be better if I could check the scroll percent and from there determine where
-// The user is to change the title, which seems easy enough, so I could do that later
-function getName(page){
-    if (page == 'about'){
+// I swear there has got to be a better way to do this
+// Probably an eventListener for scrolling?? maybe? idk
+// But this uses a 1 millisecond interval with an anonymous function
+percent = setInterval(function(){ 
+    num = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100
+    // Between 0% and 16.79% vertical scroll percent, set title to home
+    if(num >= 0 && num < 16.79) {
+        document.getElementById('name').innerHTML = 'jack/home'
+    }
+    // Between 16.79% and 51.93% vertical scroll percent, set title to home
+    else if(num > 16.79 && num < 51.93) {
         document.getElementById('name').innerHTML = 'jack/about'
     }
-    else if (page == 'projects') {
+    // Between 51.93% and 84.95% vertical scroll percent, set title to home
+    else if(num > 51.93 && num < 84.95) {
         document.getElementById('name').innerHTML = 'jack/projects'
-    } else {
+    }
+    // Between 84.95% and 100% vertical scroll percent, set title to home
+    else if(num > 84.95 && num <= 100) {
         document.getElementById('name').innerHTML = 'jack/contact'
     }
-}
+    // If the percent is not between 0-100, then just set the title to jack
+    // This happens when the user scrolls above or below the page which is possible on Safari I know for sure
+    else {
+        document.getElementById('name').innerHTML = 'jack'
+    }
+}, 1);
