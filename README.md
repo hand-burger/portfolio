@@ -1,4 +1,4 @@
-# Jack portfolio website
+# Personal portfolio website
 Just a small one page repsponsive website which houses my information
 The website was written in pure HTML, JS and most importantly CSS.
 I also used a couple of svg images for the waves near the bottom of the page.
