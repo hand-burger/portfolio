@@ -323,6 +323,10 @@ footer p {
   font-size: 1.1rem;
 }
 
+footer a {
+  font-size: 1.1rem;
+}
+
 #names {
   color: #e9b744;
 }

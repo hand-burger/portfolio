@@ -25,3 +25,6 @@ function toggle() {
         document.body.style.overflow = 'initial';
     }
 }
+
+// Update the year in the footer
+document.getElementById('year').innerHTML = new Date().getFullYear();
