@@ -538,3 +538,5 @@ footer a {
     font-size: 1.13vw;
   }
 }
+
+html { scroll-behavior: smooth; }
