@@ -237,11 +237,39 @@ header {
   margin: 0;
 }
 
+.project_tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: -0.5rem;
+}
+
+.project_tags span {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--color-bg);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .project_container p {
   padding: 0;
   font-size: 1rem;
   color: var(--color-bg);
   line-height: 1.4;
+}
+
+.project_container p a {
+  color: #c99624; /* A slightly darker version of your primary yellow for readability on light BG */
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.project_container p a:hover {
+  color: var(--color-bg);
 }
 
 .project_container img {
