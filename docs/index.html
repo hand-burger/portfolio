@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Boilerplate code -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title id='name'>jack</title>
     
-    <!-- Styles -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-    <!-- Font garbage -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;900&display=swap" rel="stylesheet" />
 
     <!-- Scripts -->
-    <script src="title.js"></script>
+    <script src="title.js" defer></script>
     <script src="main.js" defer></script>
 
-    <!-- Font Awesome -->
+    <!-- Font Awesome (v4.7.0) -->
     <script src='https://use.fontawesome.com/b4ac0c0a38.js'></script>
-
   </head>
   <body>
     <div class="siteWrapper">
     <section class="gradientCurve">
-      <!-- Nav header links -->
       <header>
         <div class="menu-btn">
           <div class="menu-btn__lines"></div>
@@ -36,69 +33,66 @@
       <div class="nav_links">
         <ul>
           <li>
-            <a href='#about' class='menu-item'">about_me</a>
+            <a href='#about' class='menu-item'>about_me</a>
           </li>
           <li>
-            <a href='#projects' class='menu-item'">projects</a>
+            <a href='#projects' class='menu-item'>projects</a>
           </li>
           <li>
-            <a href='#contact' class='menu-item'">contact</a>
+            <a href='#contact' class='menu-item'>contact</a>
           </li>
         </ul>
       </div>
       </header>
-      <!-- Intro text -->
-      <h1>Hey there, my names jack_</h1>
-      <p style="padding-bottom: 10vh">I'm a software developer with a passion for making cool things.</p>
+
+      <h1>Hey there, I'm jack_</h1>
+      <p style="padding-bottom: 10vh">4th year CS @ UofT | Software Engineer Intern @ <span class="huawei-highlight">Huawei</span> | Distributed Systems Enthusiast</p>
+      
       <!-- Curve from css ellipses -->
       <div class="curve"></div>
+      <a href="#about" class="scroll-down" aria-label="Scroll down to about section">
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </a>
     </section>
 
     <!-- About section -->
     <section id='about'>
-      <h1>Get to know me</h1>
+      <h1>The current chapter</h1>
       <h2 id='hi'>Hi, I'm Jack,</h2>
-      <p>I'm currently a third year student at the University of Toronto. In my spare time I enjoy
-        programming and creating projects of all kinds and sizes. I also have a passion for learning new things and
-        expanding my knowledge in the fields of computer science and mathematics.
+      <p>I'm a final-year Computer Science student at the University of Toronto, currently working as a Software Engineering Intern at <span class="huawei-highlight">Huawei</span>. My focus is on distributed systems and database internals.
       </p>
-      <p>Outside of school and programming, I enjoy studying and researching stocks and general finance, and listening to and playing music.
+      <p>My work spans the entire database stack, from low-level storage engine optimizations in C++ to building robust integration layers in Java for big data processing. I’m particularly interested in the intersection of high-performance backend engineering and distributed data architecture.
       </p>
-      <h1>My skills</h1>
+      
+      <h1>What I bring to the table</h1>
 
-      <!-- Skills circle section with left and right sides -->
+      <!-- Skills Circle Section -->
       <div class="circle">
         <div class="left-section">
-          <h2>Here's a list of my relevant skills, in no particular order;</h2>
+          <h2>Technical toolkit & focus areas;</h2>
         </div>
         <div class="right-section">
           <ul>
             <li>
-              <h2>High level of knowledge in major OOP languages such as C++, Java and Python</h2>
+              <h2>Low-level C++ & Java (Storage Engines, Database Internals)</h2>
             </li>
             <li>
-              <h2>Experience in creating and maintaining websites using Django and React</h2>
+              <h2>Multi-threaded & Concurrent Programming</h2>
             </li>
             <li>
-              <h2>Experience studying and applying machine learning algorithms using Python and TensorFlow</h2>
+              <h2>Advanced Debugging (GDB) & Performance Profiling</h2>
             </li>
             <li>
-              <h2>Experience in studying and applying data structures and algorithms in C++ and Python</h2>
+              <h2>Distributed Systems & Big Data (Spark, Spark Connectors)</h2>
             </li>
             <li>
-              <h2>An extensive amount of knowledge in HTML, CSS, and JavaScript</h2>
+              <h2>Containerization & Cloud (Docker, Kubernetes)</h2>
             </li>
             <li>
-              <h2>Extreme familiarity with git and github</h2>
+              <h2>Linux Power User, Shell Scripting & Git</h2>
             </li>
             <li>
-              <h2>Experience in creating and completing large scale projects involving both hardware and software</h2>
-            </li>
-            <li>
-              <h2>Extreme familiarity with the terminal and Linux operating systems</h2>
-            </li>
-            <li>
-              <h2>Experience using the Unity game engine and C# to create games and applications</h2>
+              <h2>Professional SE Workflow (Agile, Code Review)</h2>
             </li>
           </ul>
         </div>
@@ -117,32 +111,25 @@
         </div>
         <div class="project_container">
           <h3>OpenCV Rubik's Cube Solver</h3>
-          <img src="img/scannerDemo.png" alt="Wireless Headphones">
+          <img src="img/scannerDemo.png" alt="Rubik's Cube Solver">
           <p>A C++ computer vision program which scans the Rubik's cube and will output the solution.</p>
           <a href="https://github.com/hand-burger/Rubik-s-Cube-Solver" target="_blank" class="button">Check it out</a>
         </div>
         <div class="project_container">
-          <h3>Bubble Fett Robot</h3>
-          <img src="img/robot-min.png" alt="Image of robot">
-          <p>A robot which my friends and I built for the 2020 First Tech Competition where I had the role of lead programmer.</p>
-          <!-- <a href="https://drive.google.com/drive/folders/1-FEiebjNSUJ5UG-XaMlvWAC7iK4bDx9O?usp=sharing" target="_blank" class="button">Check out the folder</a> -->
-        </div>
-        <div class="project_container">
-          <h3>CCC Solutions Archive</h3>
-          <img src="img/CCC.png" alt="Canadian Computing Competition logo" style="padding-bottom: 1.5vh;">
-          <p>A mostly done repository of CCC solutions written in Python and C++.</p>
-          <a href="https://github.com/hand-burger/CCC-Solutions" target="_blank" class="button">Check out the solutions repo</a>
+          <h3>6502 Emulator</h3>
+          <img src="img/snake_game.png" alt="6502 Emulator Snake Game">
+          <p>A MOS 6502 microprocessor emulator written in C++. Implements the full instruction set with 64KB addressable memory and an SDL2-based 32x32 pixel display. Includes a functional snake game ROM.</p>
+          <a href="https://github.com/hand-burger/6502-emulator" target="_blank" class="button">Check out the source</a>
         </div>
         <div class="project_container">
           <h3>OpenCV Finger Detection</h3>
-          <img src="img/hand.png" alt="Canadian Computing Competition logo">
+          <img src="img/hand.png" alt="Finger Detection">
           <p>A computer vision project which detects the number of fingers on a hand, written in C++.</p>
           <a href="https://github.com/hand-burger/finger-detection" target="_blank" class="button">Check out the source code</a>
         </div>
       </div>
       
-
-      <!-- Svg wave graphic from https://www.shapedivider.app/ -->
+      <!-- Svg wave graphic -->
       <div class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
@@ -153,37 +140,24 @@
       </div>
     </section>
 
-    <!-- Wave 1 -->
+    <!-- Decorative waves -->
     <div class="spacer layer1" id="spacerId1"></div>
 
     <!-- Contact section -->
     <section id='contact'>
       <h1>Let's get in touch</h1>
       <div class="contact">
+        <a href="https://linkedin.com/in/jack-mcash" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>[linkedin/jackmcash]</a><br>
         <a href="mailto:jack.mcash@utoronto.ca"><i class='fa fa-envelope' aria-hidden='true'></i>[email/jack.mcash@utoronto.ca]</a><br>
-        <a href="http://instagram.com/jackmcash" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>[instagram/jackmcash]</a><br>
-        <a href="http://github.com/hand-burger" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>[github/hand-burger]</a><br>
-        <a href="http://linkedin.com/in/jack-mcash" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>[linkedin/jackmcash]</a><br>
-        <!-- <a href="img/resume.pdf" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>[resume]</a> -->
+        <a href="https://github.com/hand-burger" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>[github/hand-burger]</a><br>
       </div>
     </section>
 
-    <!-- Wave 2 -->
     <div class="spacer layer2 flip" id="spacerId2"></div>
 
-    <script>
-      // Couldn't find a better way to do this other than using 3 id's since I don't know how to use getElementsByClassName
-      // This checks if safari is being used in order to manually change the bottom padding of the two waves
-      // Since the aspect-ratio attribute doesn't exist in safari for some reason?
-      if (navigator.userAgent.match(/AppleWebKit/) && ! navigator.userAgent.match(/Chrome/)) {
-            document.getElementById("spacerId1").style.paddingBottom =  "25.25%";
-            document.getElementById("spacerId2").style.paddingBottom =  "31.25%";
-          }
-    </script>
-
-    <!-- Cheeky little footer -->
+    <!-- Footer -->
     <footer>
-      <p>© <a id="year"></a> jack mcash. All rights reserved.<br><b>Made from scratch by <b id='names'>jack</b> 🍑</b></p>
+      <p>© <span id="year"></span> jack mcash. All rights reserved.<br><b>Made from scratch by <span id='names'>jack</span> 🍑</b></p>
     </footer>
   </div>
   </body>

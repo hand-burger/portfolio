@@ -1,30 +1,37 @@
-// hamburger button toggle events
+// Navigation menu toggle logic
 const menuBtn = document.querySelector(".menu-btn");
-const menuItems = document.querySelector(".nav_links");
-const menuItem = document.querySelectorAll(".menu-item");
+const navLinks = document.querySelector(".nav_links");
+const menuItems = document.querySelectorAll(".menu-item");
+const yearSpan = document.getElementById('year');
 
-menuBtn.addEventListener("click", () => {
-    toggle();
-});
+/**
+ * Toggles the visibility of the mobile navigation menu.
+ * @param {boolean} [forceClose=false] - If true, ensures the menu is closed.
+ */
+const toggleMenu = (forceClose = false) => {
+    const isCurrentlyOpen = menuBtn.classList.contains('open');
+    const shouldBeOpen = forceClose ? false : !isCurrentlyOpen;
 
-menuItem.forEach(item => {
-    item.addEventListener('click', () => {
-        if (menuBtn.classList.contains('open')) {
-            toggle();
-        }
+    menuBtn.classList.toggle('open', shouldBeOpen);
+    navLinks.classList.toggle('open', shouldBeOpen);
+    
+    // Disable scrolling when menu is open
+    document.body.style.overflow = shouldBeOpen ? 'hidden' : '';
+};
+
+if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => toggleMenu());
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (menuBtn.classList.contains('open')) {
+                toggleMenu(true);
+            }
+        });
     });
-});
-
-function toggle() {
-    menuBtn.classList.toggle("open");
-    menuItems.classList.toggle("open")
-    // Stop scrolling if hamburger button is toggled
-    if(menuBtn.classList.length == 2){
-        document.body.style.overflow = 'hidden';
-    }else {
-        document.body.style.overflow = 'initial';
-    }
 }
 
-// Update the year in the footer
-document.getElementById('year').innerHTML = new Date().getFullYear();
+// Automatically update the copyright year in the footer
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+}
